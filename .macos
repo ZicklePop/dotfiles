@@ -1,0 +1,15 @@
+ZSH_THEME="melkat"
+export SDKROOT=$(xcrun --show-sdk-path --sdk macosx)
+alias stfu="osascript -e 'set volume output muted true'"
+alias brewup="brew update && brew upgrade"
+alias fixopenin='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user && killall Finder'
+alias scanwifi='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s'
+alias f='open -a Finder ./'
+cdf() {
+    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    if [ "$target" != "" ]; then
+        cd "$target"; pwd
+    else
+        echo 'No Finder window found' >&2
+    fi
+}

@@ -1,0 +1,31 @@
+[user]
+	name = Melanie Kat 
+	email = 318003+ZicklePop@users.noreply.github.com 
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	keepBackup = true
+[alias]
+    co = checkout
+    cm = commit
+    p = push
+    ac = !git add . && git commit -m
+    st = status -sb
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+    undo = reset --soft HEAD^
+[push]
+	default = simple
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[help]
+	autocorrect = 1
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[init]
+	defaultBranch = main

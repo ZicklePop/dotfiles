@@ -9,7 +9,7 @@
 [alias]
     co = checkout
     cm = commit
-    p = push
+    p = push -u origin head
     ac = !git add . && git commit -m
     st = status -sb
     tags = tag -l

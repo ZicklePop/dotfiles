@@ -36,7 +36,6 @@ plugins=(
 	last-working-dir
 	node
 	npm
-	npx
 	osx
 	pip
 	python

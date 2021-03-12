@@ -14,13 +14,16 @@ if [[ `uname` == 'Darwin' ]]; then
   if ! command -v brew > /dev/null 2>&1; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
+  brew install starship
 fi
 
 if [[ `whoami` == 'pi' ]]; then
   sudo cp ./motd /etc/motd > /dev/null 2>&1
+  curl -fsSL https://starship.rs/install.sh | bash
 fi
 
 mkdir -p ~/.oh-my-zsh/custom/themes
+mkdir -p ~/.config
 cp -rf mel.zsh-theme ~/.oh-my-zsh/custom/themes/mel.zsh-theme > /dev/null 2>&1
 cp -rf melkat.zsh-theme ~/.oh-my-zsh/custom/themes/melkat.zsh-theme > /dev/null 2>&1
 cp -rf .editorconfig ~/.editorconfig > /dev/null 2>&1
@@ -28,4 +31,5 @@ cp -rf .gitconfig ~/.gitconfig > /dev/null 2>&1
 cp -rf .macos ~/.macos > /dev/null 2>&1
 cp -rf .zshrc ~/.zshrc > /dev/null 2>&1
 cp -rf .SpaceVim.d ~ 2>&1
+cp -rf starship.toml ~/.config/starship.toml 2>&1
 

@@ -8,76 +8,73 @@
 
 # All SpaceVim option below [option] section
 [options]
-    # set spacevim theme. by default colorscheme layer is not loaded,
-    # if you want to use more colorscheme, please load the colorscheme
-    # layer
-    colorscheme = "spaceduck" 
-    colorscheme_bg = "dark"
-    # Disable guicolors in basic mode, many terminal do not support 24bit
-    # true colors
-    enable_guicolors = false
-    # Disable statusline separator, if you want to use other value, please
-    # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_iseparator = "arrow"
-    buffer_index_type = 4
-    windows_index_type = 3
-    enable_tabline_filetype_icon = true
-    enable_statusline_mode = false
-    statusline_unicode_symbols = true 
-    # Enable vim compatible mode, avoid changing origin vim key bindings
-    vimcompatible = true
-    bootstrap_after = "bootstrap#after"
+  colorscheme = "spaceduck" 
+  colorscheme_bg = "dark"
+  enable_guicolors = false
+  statusline_separator = "arrow"
+  statusline_iseparator = "arrow"
+  buffer_index_type = 4
+  windows_index_type = 3
+  enable_tabline_filetype_icon = true
+  enable_statusline_mode = false
+  statusline_unicode_symbols = true 
+  vimcompatible = true
+  bootstrap_after = "bootstrap#after"
+  filemanager = "nerdtree"
 
 [[custom_plugins]]
   repo = "pineapplegiant/spaceduck"
   merged = 0
 
 [[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "cycle"
+  name = 'core'
+  filetree_show_hidden = true
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_tab_key_behavior = "cycle"
 
 [[layers]]
-name = 'colorscheme'
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
 
 [[layers]]
-name = 'fzf'
+  name = 'colorscheme'
 
 [[layers]]
-name = 'git'
+  name = 'fzf'
 
 [[layers]]
-name = 'lang#html'
+  name = 'git'
 
 [[layers]]
-name = 'lang#javascript'
+  name = 'lang#html'
 
 [[layers]]
-name = 'lang#markdown'
+  name = 'lang#javascript'
 
 [[layers]]
-name = 'lang#php'
+  name = 'lang#markdown'
 
 [[layers]]
-name = 'lang#python'
+  name = 'lang#php'
 
 [[layers]]
-name = 'lang#graphql'
+  name = 'lang#python'
 
 [[layers]]
-name = 'lang#rust'
+  name = 'lang#graphql'
 
 [[layers]]
-name = 'test'
+  name = 'lang#rust'
 
 [[layers]]
-name = 'github'
+  name = 'test'
 
 [[layers]]
-name = 'indentmove'
+  name = 'github'
+
+[[layers]]
+  name = 'indentmove'

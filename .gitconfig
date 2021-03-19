@@ -7,15 +7,29 @@
 	prompt = false
 	keepBackup = true
 [alias]
-    co = checkout
-    cm = commit
-    p = push -u origin head
-    ac = !git add . && git commit -m
-    st = status -sb
-    tags = tag -l
-    branches = branch -a
-    remotes = remote -v
-    undo = reset --soft HEAD^
+  a = add
+  ac = !git add . && git commit -m
+  b = branch
+  c = commit
+  cl = clone
+  co = checkout
+  cp = cherry-pick
+  m = merge
+  p = push -u origin head
+  pu = pull
+  r = reset
+  s = status -sb
+  t = tag
+  tags = tag -l
+  force-push = push --force-with-length
+  fp = force-push
+  branches = branch -a
+  remotes = remote -v
+  undo = reset --soft HEAD^
+  deploy-major = !git tag -f deploy-major && git push origin deploy-major --no-verify
+  deploy-minor = !git tag -f deploy-minor && git push origin deploy-minor --no-verify
+  deploy-patch = !git tag -f deploy-patch && git push origin deploy-patch --no-verify
+  deploy-prerelease = !git tag -f deploy-prerelease && git push origin deploy-prerelease --no-verify
 [push]
 	default = simple
 [filter "media"]

@@ -15,7 +15,8 @@
   co = checkout
   cp = cherry-pick
   m = merge
-  p = push -u origin head
+  p = push
+  po = push -u origin head
   pu = pull
   r = reset
   s = status -sb

@@ -1,11 +1,11 @@
 [user]
-	name = Melanie Kat 
-	email = 318003+ZicklePop@users.noreply.github.com 
+  name = Melanie Kat 
+  email = 318003+ZicklePop@users.noreply.github.com 
 [difftool]
-	prompt = false
+  prompt = false
 [mergetool]
-	prompt = false
-	keepBackup = true
+  prompt = false
+  keepBackup = true
 [alias]
   a = add
   ac = !git add . && git commit -m
@@ -32,15 +32,17 @@
   deploy-patch = !git tag -f deploy-patch && git push origin deploy-patch --no-verify
   deploy-prerelease = !git tag -f deploy-prerelease && git push origin deploy-prerelease --no-verify
 [push]
-	default = simple
+  default = simple
+[pull]
+  rebase = simple
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
 [help]
-	autocorrect = 1
+  autocorrect = 1
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [init]
-	defaultBranch = main
+  defaultBranch = main

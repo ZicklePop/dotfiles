@@ -1,4 +1,4 @@
-ZSH_THEME="dracula-pro"
+ZSH_THEME="melkat"
 export SDKROOT=$(xcrun --show-sdk-path --sdk macosx)
 alias stfu="osascript -e 'set volume output muted true'"
 alias brewup="brew update && brew upgrade"

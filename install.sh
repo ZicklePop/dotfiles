@@ -26,6 +26,7 @@ mkdir -p ~/.oh-my-zsh/custom/themes
 mkdir -p ~/.config
 cp -rf mel.zsh-theme ~/.oh-my-zsh/custom/themes/mel.zsh-theme > /dev/null 2>&1
 cp -rf melkat.zsh-theme ~/.oh-my-zsh/custom/themes/melkat.zsh-theme > /dev/null 2>&1
+cp -rf dracula-pro.zsh-theme ~/.oh-my-zsh/custom/themes/dracula-pro.zsh-theme > /dev/null 2>&1
 cp -rf .editorconfig ~/.editorconfig > /dev/null 2>&1
 cp -rf .gitconfig ~/.gitconfig > /dev/null 2>&1
 cp -rf .macos ~/.macos > /dev/null 2>&1

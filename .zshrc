@@ -88,6 +88,6 @@ if [[ `uname` == 'Darwin' ]]; then
 	source ~/.macos
 fi
 
-eval "$(starship init zsh)"
-
 source $ZSH/oh-my-zsh.sh
+
+eval "$(starship init zsh)"

@@ -19,7 +19,7 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export PKG_CONFIG_PATH="/usr/local/opt/ncurses/lib/pkgconfig"
 export PYTHONIOENCODING=UTF-8
 
-ZSH_THEME="mel"
+ZSH_THEME="dracula-pro"
 ENABLE_CORRECTION="true"
 HYPHEN_INSENSITIVE="true"
 

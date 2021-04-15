@@ -71,6 +71,9 @@
   name = 'lang#rust'
 
 [[layers]]
+  name = 'lang#typescript'
+
+[[layers]]
   name = 'test'
 
 [[layers]]

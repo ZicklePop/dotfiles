@@ -8,7 +8,7 @@
 
 # All SpaceVim option below [option] section
 [options]
-  colorscheme = "spaceduck" 
+  colorscheme = "dracula/vim" 
   colorscheme_bg = "dark"
   enable_guicolors = false
   statusline_separator = "arrow"
@@ -23,8 +23,7 @@
   filemanager = "nerdtree"
 
 [[custom_plugins]]
-  repo = "pineapplegiant/spaceduck"
-  merged = 0
+  name = "dracula/vim"
 
 [[layers]]
   name = 'core'

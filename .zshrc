@@ -34,7 +34,7 @@ plugins=(
 	history
 	jsontools
 	last-working-dir
-	osx
+	macos
 	pip
 	python
 	repo

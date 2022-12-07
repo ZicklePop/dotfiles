@@ -33,6 +33,7 @@
   deploy-prerelease = !git tag -f deploy-prerelease && git push origin deploy-prerelease --no-verify
 [push]
   default = simple
+  autoSetupRemote = true
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
